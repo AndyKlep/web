@@ -1,0 +1,60 @@
+/* Общие стили страницы */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f5;
+}
+
+/* Контейнер для нескольких карточек */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Сама карточка */
+.card {
+    width: 320px;
+    background-color: burlywood;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* эффект карточки [web:3][web:6] */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; 
+}
+
+/* Фото внутри карточки */
+.photo {
+    padding: 20px;
+    text-align: center;
+}
+
+.photo img {
+    width: 80%;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+
+/* Информация о пользователе */
+.info {
+    padding: 20px;
+}
+
+.info h2 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+}
+
+.info p {
+    margin: 4px 0;
+}
+
+/* Стили при наведении на карточку */
+.card:hover {
+    transform: translateY(-10px);               /* лёгкий подъем при hover [web:6] */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* усиленная тень при hover [web:3][web:6] */
+    background-color: #deb887;
+    cursor: pointer;
+}
